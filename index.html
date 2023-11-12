@@ -5,8 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+      .footer-menu {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+      }
+
+      .footer-menu li {
+        margin-right: 20px;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column; /* Arrange elements vertically */
+        align-items: center; /* Center-align elements horizontally */
+      }
+
+      .footer-social {
+        margin-bottom: -100px; /* Reduce spacing to 60px */
+      }
+    </style>
 </head>
 <body>
-    
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="#"><img src="https://cdn.pixabay.com/photo/2017/03/24/07/28/facebook-2170419_1280.png" width="19" height="19" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn.pixabay.com/photo/2017/03/24/07/28/instagram-2170420_1280.png" width="19" height="19" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn.pixabay.com/photo/2017/03/24/07/28/twitter-2170426_1280.png" width="19" height="19" alt="Twitter"></a>
+          <a href="#"><img src="https://cdn.pixabay.com/photo/2017/03/24/07/28/linkedin-2170421_1280.png" width="19" height="19" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-logo"></div>
+        <ul class="footer-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2022 Online Yoga Class. All rights reserved.</p>
+      </div>
+    </footer>
 </body>
 </html>
