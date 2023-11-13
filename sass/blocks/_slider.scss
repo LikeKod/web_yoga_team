@@ -6,8 +6,6 @@
     margin: 0 auto;
     max-width: 1203px;
     height: 712px;
-    border-radius: 5px;
-    // background-image: url("../../img/slide-img/main-slide.jpg");
     
 }
 .slider__content {
@@ -22,6 +20,7 @@
 }
 
 .slider-img{
+    border-radius: 5px;
     position: relative;
     z-index: -2;
 }
@@ -51,16 +50,14 @@
     display: flex;
     column-gap: 25px;
 }
-.button {
-}
-.button-gray {
-}
 .slider-controls {
     display: flex;
     gap: 29px;
 }
+
 .slider-controls-left {
 }
+
 .slider-pagination {
     color: #626262;
 }
