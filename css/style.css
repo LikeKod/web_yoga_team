@@ -1,3 +1,213 @@
 *{
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: bisque;
+}
+
+button{
+    width: 280px;
+    height: 75px;
+    background-color: #48B84A;
+    border-radius: 10px;
+    margin-right: 15px;
+    color: white;
+    font-size: 25px;
+    border: 1px solid #48B84A;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1750px;
+    background-color: black;
+}
+
+.wrap_workshop {
+ margin: 0 auto;
+ width: 1521px;
+ height: 818px;
+}
+
+.container h1{
+    text-align: center;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400px;
+    font-size: 100px;
+    line-height: 125px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+
+}
+
+.card_workshop_btn{
+    margin-bottom: 10px;
+}
+
+.card_workshop_btn h3{
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43.75px;
+    color: #46B249;
+}
+
+.card_workshop_btn p{
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+.box_card {
+    display: flex;
+    height: 676px;
+    justify-content: space-around;
+}
+
+.card_workshop{
+    
+    display: flex;
+    width: 756px;
+    height: 676px;
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+}
+
+.left_card{
+    background-image: url(/img/Padmasana-Benefits\ 1.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px solid black;
+    box-shadow: inset 5px 0 30px 60px rgba(0, 0, 0, 0.5)
+
+}
+
+.right_card{
+    background-image: url(/img/0cc9550c-212f-4ea7-adc0-a8afc75c4895-5a086418\ 1.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px solid black;
+    box-shadow: inset 5px 0 50px 60px rgba(0, 0, 0, 0.5)
+}
+
+.btn_right{
+    background-color: #233133;
+    border: 1px solid #233133;
+}
+
+.btn_right::after {
+
+}
+
+.box_classes{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1558px;
+    height: 888px;
+}
+
+.box_classes h1{
+    color: black;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 125px;
+}
+
+.classes_text p{
+    width: 619px;
+    height: 353px;
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 43.38px;
+}
+
+.classes_text .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 261px;
+    height: 55px;
+    text-align: center;
+    border: 1px solid #46B249;
+}
+
+.classes_text .btn a{
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 32.97px;
+    color: white;
+    text-decoration: none;
+}
+.classes_text .btn svg{
+    color: #46B249;
+    margin-left: 20px;
+}
+
+.subscribe{
+    display: flex;
+    width: 840.57px;
+    height: 712px;
+    background-image: url(/img/classes.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 15px solid black;
+    box-shadow: inset 5px 0 50px 60px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.subscribe_btn{
+    margin-bottom: 10px;
+    
+}
+
+.subscribe_btn h3{
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43.75px;
+    color: #46B249;
+}
+
+.subscribe_btn p{
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+.subscribe_btn .btn {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 261px;
+    height: 55px;
+    text-align: center;
+    border: 1px solid #46B249;
+    background-color: #46B249;
+
+}
+
+.subscribe_btn .btn a{
+    color: white;
+    text-decoration: none;
 }
