@@ -1,3 +1,65 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+body {
+  color: #fff;
+  background-color: #000;
+}
+.wrapper{
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('img/Vector.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.container{
+  display: flex;
+  max-width: 1580px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+.title{
+  font-family: Ramabhadra;
+  padding-top: 185px;
+  font-size: 100px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  -webkit-background-clip: text;
+  width: 600px;
+}
+.text{
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 19px;
+  padding-top: 25px;
+  word-wrap: break-word;
+  width: 745px;
+}
+p{
+  margin-bottom: 25px;
+  text-align: justify;
+  line-height: 1.6;
+}
+.img_why_us{
+  padding-top: 185px;
+  display: inline;
+  padding-left: 23px;
+}
+.button{
+  font-family: Poppins;
+  background:  transparent;
+  height:  55px;
+  border:  1px solid #48B84A;
+  display:  inline-block;
+  width:  167px;
+  padding-right:  38px!important;
+  font-size:  19px;
+  color:  #fff;
+  background-image: url('img/Union.svg');
+  background-repeat: no-repeat;
+  background-position:98px;
+
+}
+
