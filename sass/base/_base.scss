@@ -35,9 +35,13 @@ section {
 
 /* Grid styles */
 
+.container-fluid{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .container {
 	max-width: 1610px;
-    width: 100%;
 	margin-left: auto;
     margin-right: auto;
 	padding-left: 15px;

@@ -1,63 +1,96 @@
-// находим блок слайдер по id
-const slider = document.querySelector("#slider");
-const moveLeft = document.querySelector("#left")
-const moveRight = document.querySelector("#right")
-const firstSlide = slider.querySelector(".slider__content")
+const slider = document.querySelector(".slider");
+const wrapper = document.querySelector(".slider__wrapper");
+const slides = document.querySelectorAll(".slide");
+const playBtn = document.querySelector(".play-button");
+const navigations = document.querySelectorAll(".slider__navigation")
 
-console.log(firstSlide)
+let activeOrder = 0;
 
-let firstSlideWidth = firstSlide.clientWidth + 58;
+init();
 
-console.log(firstSlideWidth)
+function init() {
+    // проходим в цикле слайды
+    for (let i = 0; i < slides.length; i++) {
+        const slide = slides[i];
+        // присваиваем дата атрибут с индексом
+        slide.dataset.order = i;
+        slide.style.transform = "translateX(-50%)";
+        slide.addEventListener('click', clickHandler)
+    }
 
-moveLeft.addEventListener("click", () => {
-    console.log("left")
-    slider.scrollLeft -= firstSlideWidth;
-})
+    for (const navigation of navigations) {
+        navigation.addEventListener("click", navHandler);
+    }
 
-moveRight.addEventListener("click", () => {
-    console.log("right")
-    slider.scrollLeft += firstSlideWidth;
-})
 
-// преобразуем в массив дочерние элементы
-const sliderItems = Array.from(slider.children);
+    // выбираем активным средний слайд
+    activeOrder = Math.floor(slides.length / 2);
+    console.log(activeOrder)
 
-const dragging = (e) => {
-    slider.scrollLeft = e.pageX;
+    update();
 }
 
-// slider.addEventListener("mousemove", dragging);
+function update() {
+    const {width} = wrapper.getBoundingClientRect(); // ширина контейнера
+    const img = document.querySelector(".slide").getBoundingClientRect(); // ширина слайда
+    const gap = 60; // отступ между слайдами
+
+    for (let i = 0; i < slides.length; i++){
+
+       
+
+        const leftSlide = document.querySelector(
+            `.slide[data-order = "${activeOrder - i}"]`
+        );
+
+        if (leftSlide && i != 0) {
+            leftSlide.classList.add('slide--small')
+        } else if (leftSlide && i == 0) {
+            leftSlide.classList.remove('slide--small')
+        }
+
+        // смещение влево от центрального
+        if (leftSlide) {
+            leftSlide.style.left=`${width/2 - i * (img.width + gap)}px`
+        }
+
+        const rightSlide = document.querySelector(
+            `.slide[data-order = "${activeOrder + i}"]`
+        );
+
+        if (rightSlide != null && i !== 0) {
+            rightSlide.classList.add('slide--small')
+        } else if (rightSlide && i == 0) {
+            rightSlide.classList.remove('slide--small')
+        }
+
+        // смещение вправо от центрального 
+        if (rightSlide) {
+            rightSlide.style.left=`${width/2 + i * (img.width + gap)}px`
+        }
+    }
+
+    
+}
+
+function clickHandler () {
+    const order = parseInt(this.dataset.order, 10);
+    activeOrder = order;
+    update();
+}
+
+
+function navHandler (e) {
+    e.preventDefault();
+    const {dir} = this.dataset;
+
+    if (dir === 'prev') {
+        activeOrder = Math.max(0, activeOrder - 1);
+    } else if (dir === 'next')  {
+        activeOrder = Math.min(slides.length, activeOrder + 1);
+    }
+    update();
+}
 
 
 
-
-// проходим в цикле слайды
-// sliderItems.forEach((slide, index) => {
-//     console.log(slide);
-
-//     // Уменьшим все слайды, второго
-//     if (index != 1) {
-//         slide.classList.add("slider__content--small");
-//     }
-
-//     // Задаем интексы слайдам
-//     slide.dataset.index = index;
-
-//     // Клик по сладу
-//     slide.addEventListener("click", function () {
-//         // уменьшаем текущий слад
-//         slide.classList.add("slider__content--small");
-
-//         // расчитываем индекс следующего слайда
-//         let nextSlideIndex =index + 1 === sliderItems.length ? 0 : index + 1;
-
-//         // находим следующий слайд
-//         const nextSlide = slider.querySelector(
-//             `[data-index="${nextSlideIndex}"]`
-//         );
-
-//         // отображаем следующий слайд
-//         nextSlide.classList.remove("slider__content--small");
-//     });
-// });
