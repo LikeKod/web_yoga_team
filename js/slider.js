@@ -57,6 +57,7 @@ function update() {
         // смещение влево от центрального
         if (leftSlide) {
             leftSlide.style.left=`${width/2 - i * (img.width + gap)}px`
+            leftSlide.style.top=`${i * 50}px`
         }
 
         const rightSlide = document.querySelector(
@@ -74,6 +75,7 @@ function update() {
         // смещение вправо от центрального 
         if (rightSlide) {
             rightSlide.style.left=`${width/2 + i * (img.width + gap + 30)}px`
+            rightSlide.style.top=`${i * 50}px`
         }
     }
 
