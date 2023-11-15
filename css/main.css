@@ -199,6 +199,23 @@ section {
   text-align: center;
   transition: all 0.7s; }
 
+.lable::after {
+  position: absolute;
+  content: "Beginner";
+  right: -55px;
+  top: 26px;
+  z-index: -2;
+  color: #FFF;
+  font-family: Ramabhadra, sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  width: 55px;
+  height: 232px;
+  border-radius: 0 28px 28px 0;
+  background-color: #48B84A; }
+
 .slide--small {
   height: 612px; }
 
@@ -212,7 +229,8 @@ section {
   mask-image: linear-gradient(to top, transparent 10%, black 87.86%); }
 
 .play-button {
-  margin-top: -260px; }
+  margin-top: -420px;
+  margin-bottom: 58px; }
 
 .slider__content-text {
   font-size: 30px;
@@ -234,7 +252,7 @@ section {
   justify-content: center; }
 
 .slider__btn {
-  margin-top: 730px;
+  margin-top: 780px;
   display: flex;
   justify-content: center;
   gap: 29px; }

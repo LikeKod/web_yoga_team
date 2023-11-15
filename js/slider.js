@@ -3,6 +3,8 @@ const wrapper = document.querySelector(".slider__wrapper");
 const slides = document.querySelectorAll(".slide");
 const playBtn = document.querySelector(".play-button");
 const navigations = document.querySelectorAll(".slider__navigation")
+const pagination = document.querySelectorAll(".pagination-num")
+
 
 let activeOrder = 0;
 
@@ -13,6 +15,7 @@ function init() {
     for (let i = 0; i < slides.length; i++) {
         const slide = slides[i];
         // присваиваем дата атрибут с индексом
+
         slide.dataset.order = i;
         slide.style.transform = "translateX(-50%)";
         slide.addEventListener('click', clickHandler)
@@ -35,18 +38,20 @@ function update() {
     const img = document.querySelector(".slide").getBoundingClientRect(); // ширина слайда
     const gap = 60; // отступ между слайдами
 
+    paginate ()
+    
+
     for (let i = 0; i < slides.length; i++){
-
-       
-
         const leftSlide = document.querySelector(
             `.slide[data-order = "${activeOrder - i}"]`
         );
 
         if (leftSlide && i != 0) {
             leftSlide.classList.add('slide--small')
+            leftSlide.classList.remove('lable')
         } else if (leftSlide && i == 0) {
             leftSlide.classList.remove('slide--small')
+            leftSlide.classList.add('lable')
         }
 
         // смещение влево от центрального
@@ -60,13 +65,15 @@ function update() {
 
         if (rightSlide != null && i !== 0) {
             rightSlide.classList.add('slide--small')
+            rightSlide.classList.remove('lable')
         } else if (rightSlide && i == 0) {
             rightSlide.classList.remove('slide--small')
+            rightSlide.classList.add('lable')
         }
 
         // смещение вправо от центрального 
         if (rightSlide) {
-            rightSlide.style.left=`${width/2 + i * (img.width + gap)}px`
+            rightSlide.style.left=`${width/2 + i * (img.width + gap + 30)}px`
         }
     }
 
@@ -90,6 +97,11 @@ function navHandler (e) {
         activeOrder = Math.min(slides.length, activeOrder + 1);
     }
     update();
+}
+
+function paginate () {
+    pagination[0].innerHTML = activeOrder + 1;
+    pagination[1].innerHTML = slides.length;
 }
 
 
