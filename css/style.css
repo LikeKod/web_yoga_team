@@ -6,6 +6,8 @@ body{
     background-color: bisque;
 }
 
+/* Workshops */
+
 button{
     width: 280px;
     height: 75px;
@@ -55,14 +57,16 @@ button:hover{
     font-size: 35px;
     line-height: 43.75px;
     color: #46B249;
+    font-family: 'Poppins', sans-serif;
 }
 
 .card_workshop_btn p{
-    margin: 0 auto;
+    margin-top: 10px;
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .box_card {
@@ -82,22 +86,85 @@ button:hover{
 }
 
 .left_card{
+    width: 694px;
+    height: 600px;
     background-image: url(/img/Padmasana-Benefits\ 1.png);
     border-radius: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     border: 15px solid black;
-    box-shadow: inset 5px 0 30px 60px rgba(0, 0, 0, 0.5)
+    box-shadow: inset 5px 0 30px 60px rgba(0, 0, 0, 0.5);
+    opacity: 50%;
+    transition: 1s;
+    position: relative;
+}
 
+
+  
+
+.left_card:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: linear-gradient(to bottom, transparent 0%,  rgba(0,0,0,1) 100%);
+  }
+
+  .left_card::before {
+    position: absolute;
+    content: "Beginner";
+    top: 26px;
+    right: -55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: #FFF;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    width: 55px;
+    height: 232px;
+    border-radius: 0 28px 28px 0;
+    background-color: #48B84A; 
+}
+.left_card:hover{
+    opacity: 100%;
 }
 
 .right_card{
+    width: 694px;
+    height: 600px;
     background-image: url(/img/0cc9550c-212f-4ea7-adc0-a8afc75c4895-5a086418\ 1.png);
     border-radius: 20px;
     background-repeat: no-repeat;
     background-size: cover;
     border: 15px solid black;
-    box-shadow: inset 5px 0 50px 60px rgba(0, 0, 0, 0.5)
+    box-shadow: inset 5px 0 50px 60px rgba(0, 0, 0, 0.5);
+    opacity: 50%;
+    transition: 1s;
+    position: relative;
+    
+}
+
+.right_card:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: linear-gradient(to bottom, transparent 0%,  rgba(0,0,0,1) 100%);
+  }
+
+  .card_workshop_btn{
+    z-index: 5;
+  }
+
+
+.right_card:hover{
+    opacity: 100%;
 }
 
 .btn_right{
@@ -109,6 +176,11 @@ button:hover{
 
 }
 
+
+
+
+/* Upcoming Classes */
+
 .box_classes{
     margin: 0 auto;
     display: flex;
@@ -117,11 +189,13 @@ button:hover{
     height: 888px;
 }
 
-.box_classes h1{
+.wrap_classes h1{
     color: black;
     font-weight: 400;
     font-size: 100px;
     line-height: 125px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .classes_text p{
@@ -131,6 +205,7 @@ button:hover{
     font-weight: 400;
     font-size: 25px;
     line-height: 43.38px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .classes_text .btn {
@@ -142,6 +217,7 @@ button:hover{
     height: 55px;
     text-align: center;
     border: 1px solid #46B249;
+    cursor: pointer;
 }
 
 .classes_text .btn a{
@@ -150,6 +226,7 @@ button:hover{
     line-height: 32.97px;
     color: white;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 .classes_text .btn svg{
     color: #46B249;
@@ -169,12 +246,22 @@ button:hover{
     text-align: center;
     justify-content: center;
     align-items: end;
+    position: relative;
 }
+
+.subscribe:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: linear-gradient(to bottom, transparent 0%,  rgba(0,0,0,1) 100%);
+  }
 
 
 .subscribe_btn{
     margin-bottom: 10px;
-    
+    z-index: 100;
 }
 
 .subscribe_btn h3{
@@ -183,6 +270,7 @@ button:hover{
     font-size: 35px;
     line-height: 43.75px;
     color: #46B249;
+    font-family: 'Poppins', sans-serif;
 }
 
 .subscribe_btn p{
@@ -191,6 +279,7 @@ button:hover{
     font-size: 20px;
     line-height: 30px;
     color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 .subscribe_btn .btn {
@@ -204,10 +293,216 @@ button:hover{
     text-align: center;
     border: 1px solid #46B249;
     background-color: #46B249;
+    border-radius: 10px;
 
+}
+
+.btn:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
 }
 
 .subscribe_btn .btn a{
     color: white;
+    text-decoration: none;
+}
+
+
+/* Subscription Plans */
+
+.wrap_plans{
+
+    width: 1579px;
+    height: 770px;
+    margin: 0 auto;
+}
+
+.wrap_plans h1{
+    margin-bottom: 50px;
+    margin-top: -50px;
+}
+
+.grid_container{
+    width: 1579px;
+    height: 770px;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px; 
+    grid-auto-columns: 1fr;
+    /* grid-row-gap: 10px; 
+    grid-gap: 10px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 100px;  */
+    /* grid-template-rows: 100px 100px 100px; */
+    /* grid-auto-flow: column;
+    place-items: stretch; */
+}
+
+.session_text{
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 1px solid black;
+    background-color: #46B249;
+    width: 370px;
+    height: 163px;
+}
+
+.session_text p{
+    color: white;
+    height: 38px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.quantiti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    background-color: #233133;
+}
+
+.quantiti p{
+    margin-top: 7px
+}
+.quantiti_session p{
+    margin-top: 10px
+}
+.item1 .session_text{
+    background-color: #233133;
+}
+.quantiti_session{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.item2 .quantiti_session::after{
+    content: 'RECOMENDED';
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;   
+    position: absolute;
+    width: 181.65px;
+    height: 29.36px;
+    top: 36px;
+    left: 235px;
+    background-color: white;
+    transform: rotate(49.29deg)
+    
+}
+
+.session_text .quantiti_session p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.session_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 280px;
+    height: 75px;
+    cursor: pointer;
+    border: 1px solid #46B249;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 45.25px;
+}
+.session_btn:hover {
+    background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+.item1 .quantiti{
+    width: 38px;
+    height: 38px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.item1 .quantiti_session p{
+    margin-top: 10px;
+}
+.item1 p{
+    color: #46B249;
+    height: 38px;
+    text-align: center;
+    font-weight: 400;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.grid-item{
+    width: 370px;
+    height: 580px;
+    background-color: #233133;
+    border-radius: 15px;
+}
+
+.grid-item ul li{
+    list-style-type: none;
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 54.3px;
+
+}
+
+ul{
+    list-style: none;
+}
+ul > li{
+    padding-left:40px;
+    position: relative;
+    /* margin: 10px; */
+}
+ul > li:before{
+    content: '✔';
+    position: absolute; top: 0; left: 0;
+    color: white;
+}
+
+.item1 .session_btn{
+
+    border: 1px solid #525252;
+   
+}
+.item1 ul li:nth-last-child(-n+3):before{
+    content: '';
+}
+
+.item1 ul li:nth-last-child(-n+3){
+    color: gray;
+}
+
+.session_btn a{
+    color: white;
+    text-align: center;
     text-decoration: none;
 }
