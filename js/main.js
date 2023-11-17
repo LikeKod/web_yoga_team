@@ -1,5 +1,5 @@
 new Swiper('.image-slider', {
-  loop: true,
+  initialSlide: 2,
 
   loopedSlides: 5,
 
