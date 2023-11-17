@@ -153,8 +153,15 @@
     margin-bottom: 0;
 }
 
-.swiper-pagination {
+#swiper__pagination {
+    width: 68px;
+    top: 765px;
+    left: 927px;
     margin-bottom: 120px;
+    color: #626262;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 125%;
 }
 
 .custom-button-prev {
@@ -172,7 +179,7 @@
     background: url('../images/Arrow\ -\ Left.svg') 0 0/ 100% no-repeat;
     width: 35px;
     height: 35px;
-    top: 85px;
+    top: 109px;
     left: 109px;
 }
 
@@ -183,6 +190,6 @@
     background: url('../images/right.svg') 0 0/ 100% no-repeat;
     width: 35px;
     height: 35px;
-    top: 85px;
+    top: 109px;
     right: 109px;
 }
