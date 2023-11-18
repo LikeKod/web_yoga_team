@@ -4,14 +4,14 @@
 body {
   color: #fff;
   background-color: #000;
+  background-image: url("../img/Vector.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 .wrapper{
   min-height: 100%;
   width: 100%;
   overflow: hidden;
-  background-image: url("../img/Vector.svg");
-  background-position: right;
-  background-repeat: no-repeat;
 }
 .container{
   display: flex;
@@ -60,6 +60,48 @@ p{
   background-image: url('../img/Union.svg');
   background-repeat: no-repeat;
   background-position:98px;
-
 }
-
+.information{
+  display: flex;
+  max-width: 1580px;
+  padding: 157px 31.83px;
+  margin: 0 auto;
+  height: 100%;
+}
+.rectangle{
+  width: 440.34px;
+  height: 692.34px;
+  padding-top: 154px;
+  background: #48B84A;
+  border-radius: 21px;
+}
+.square{
+  width: 504px;
+  height: 604.8px;
+  padding-top: 154px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  background-image: url('../img/behrouz-sasani-lARsk3UchkQ-unsplash\ 1.png'); 
+  background-repeat: no-repeat;
+  background-position:center 21.22px;
+  position: relative;
+  top: -111.76999999999998px;
+  right: 31.83px;
+}
+.description1{
+  font-family: Ramabhadra;
+  color: #48B84A;
+  font-size: 30px;
+  word-wrap: break-word;
+  padding-top: 369px;
+  padding-left: 98px;
+  padding-right: 10px;
+}
+.description2{
+  font-family: Ramabhadra;
+  color: #080C14;
+  font-size: 20px;
+  word-wrap: break-word;
+  padding-top: 10px;
+  padding-left: 33px;
+}
