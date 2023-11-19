@@ -544,10 +544,10 @@ ul{
 }
 ul > li{
     padding-left:40px;
-    position: relative;
-    /* margin: 10px; */
+    position: relative; 
+    margin: 10px;
 }
-ul > li:before{
+.wrap_plans ul > li:before{
     content: '✔';
     position: absolute; top: 0; left: 0;
     color: white;
@@ -640,6 +640,14 @@ p {
   background-position: 98px;
 }
 
+.button:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgba(0,0,0,0);
+    color: #3a7999;
+    box-shadow: inset 0 0 0 3px #3a7999;
+}
+
 .information {
   display: flex;
   max-width: 1580px;
@@ -730,12 +738,9 @@ p {
 /* Slider our teachers */
 
 .wrapper {
-    min-height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background-color: #000;
-    color: #fff;
-    font-family: Poppins;
+    margin: 0 auto;
+    width: 1521px;
+    height: 818px;
 }
 
 .title {
