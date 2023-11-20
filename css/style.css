@@ -25,14 +25,14 @@ button:hover{
 
 .container{
     margin: 0 auto;
-    width: 1750px;
+    max-width: 1750px;
     background-color: black;
 }
 
 .wrap_workshop {
  margin: 0 auto;
- width: 1521px;
- height: 818px;
+ max-width: 1521px;
+ min-height: 818px;
 }
 
 .container h1{
@@ -67,6 +67,7 @@ button:hover{
     line-height: 30px;
     color: white;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 .box_card {
@@ -97,6 +98,7 @@ button:hover{
     opacity: 50%;
     transition: 1s;
     position: relative;
+    z-index: 2;
 }
 
 .elem_data{
@@ -160,6 +162,7 @@ button:hover{
     opacity: 50%;
     transition: 1s;
     position: relative;
+    z-index: 1;
     
 }
 
@@ -170,6 +173,7 @@ button:hover{
     position: absolute;
     top: 0; left: 0;
     background: linear-gradient(to bottom, transparent 0%,  rgba(0,0,0,1) 100%);
+    z-index: 1;
   }
 
   .card_workshop_btn{
@@ -197,10 +201,14 @@ button:hover{
 /* Upcoming Classes */
 
 .box_classes{
+  max-width: 1558px;
+}
+
+.box_classes{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 1558px;
+    max-width: 1558px;
     height: 888px;
     position: relative;
 }
@@ -470,7 +478,8 @@ button:hover{
     top: 36px;
     left: 235px;
     background-color: white;
-    transform: rotate(49.29deg)
+    transform: rotate(49.29deg);
+    color: black;
 }
 
 .session_text .quantiti_session p{
@@ -765,6 +774,7 @@ p {
     transition: all .5s;
     position: relative;
     opacity: .2;
+    z-index: 2;
 }
 
 .swiper-slide-active {
@@ -865,6 +875,7 @@ p {
     right: -53px;
     transition: all .5s;
     opacity: 0;
+    z-index: 1;
 }
 
 .swiper-slide-active .socials {
@@ -928,4 +939,92 @@ p {
     height: 35px;
     top: 109px;
     right: 109px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+/* Media */
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+
+/* 1750px */
+/* ------------------------------------------------------------------------------------------------ */
+/* 1750px */
+
+@media (max-width: 1750px){
+
+}
+
+
+/* 1200px */
+/* ------------------------------------------------------------------------------------------------ */
+/* 1200px */
+@media (max-width: 1199px){
+  /* Workshops */
+  /* --------------------------------------------------------------------------------------------- */
+  /* Workshops */
+  .box_card{
+    display: inline;
+    margin: 0 auto;
+  }
+  .left_card{
+    margin: 0 auto;
+  }
+  .right_card{
+    margin: 0 auto;
+  }
+}
+/* 767px */
+/* ------------------------------------------------------------------------------------------------ */
+/* 767px */
+@media (max-width: 767px){
+
+  /* Workshops */
+  /* --------------------------------------------------------------------------------------------- */
+  /* Workshops */
+  .left_card::before{
+    visibility: hidden;
+  }
+  .wrap_workshop h1{
+    font-size: 70px;
+  }
+  .left_card{
+    max-width: 100%;
+    max-height: 100%;
+    background-size: contain;
+    opacity: 100%;
+  }
+  .right_card{
+    max-width: 100%;
+    max-height: 100%;
+    background-size: contain;
+    opacity: 100%;
+  }
+  .card_workshop_btn{
+  }
+}
+/* 480px */
+/* ------------------------------------------------------------------------------------------------ */
+/* 480px */
+@media (max-width: 480px){
+  /* Workshops */
+  /* --------------------------------------------------------------------------------------------- */
+  /* Workshops */
+  .elem_data{
+    visibility: hidden;
+  }
+  .card_workshop_btn{
+    margin-bottom: 50%;
+  }
+  .card_workshop_btn .btn {
+    margin-top: 10px;
+  }
+  .wrap_workshop h1{
+    font-size: 50px;
+  }
 }
