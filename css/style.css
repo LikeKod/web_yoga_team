@@ -978,6 +978,38 @@ p {
   .right_card{
     margin: 0 auto;
   }
+  /* Upcoming Classes */
+  /* ---------------------------------------------------------------------------------------------- */
+  /* Upcoming Classes */
+  .box_classes{
+    display: inline;
+    margin: 0 auto;
+  }
+  .box_classes::after{
+    visibility: hidden;
+}
+.classes_text{
+    margin: 0 auto;
+    text-align: center;
+    min-width: 353px;
+}
+.classes_text p{
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    max-height: 500px;
+    overflow: hidden;
+}
+.classes_text .btn{
+    margin: 30px auto;
+    
+}
+.subscribe{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    background-size: contain;
+}
 }
 /* 767px */
 /* ------------------------------------------------------------------------------------------------ */
@@ -1007,6 +1039,32 @@ p {
   }
   .card_workshop_btn{
   }
+    /* Upcoming Classes */
+  /* ---------------------------------------------------------------------------------------------- */
+  /* Upcoming Classes */
+  .wrap_classes h1{
+    font-size: 70px;
+  }
+.classes_text{
+    margin: 0 auto;
+    text-align: center;
+    min-width: 400px;
+}
+.classes_text p{
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    max-height: 500px;
+    overflow: hidden;
+}
+.classes_text .btn{
+    margin: 30px auto;
+    
+}
+.subscribe{
+    margin: 0 auto;
+    
+}
 }
 /* 480px */
 /* ------------------------------------------------------------------------------------------------ */
@@ -1026,5 +1084,11 @@ p {
   }
   .wrap_workshop h1{
     font-size: 50px;
+  }
+      /* Upcoming Classes */
+  /* ---------------------------------------------------------------------------------------------- */
+  /* Upcoming Classes */
+  .subscribe_btn{
+    margin-bottom: 50%;
   }
 }
