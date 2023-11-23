@@ -1,0 +1,20 @@
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 44px;
+    margin-bottom: 35px;
+}
+
+.social-list a{
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+
+.svg-size{
+    height: 69px;
+    width: 69px;
+}
