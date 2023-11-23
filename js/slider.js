@@ -1,4 +1,5 @@
 const slider = document.querySelector(".slider");
+
 const wrapper = document.querySelector(".slider__wrapper");
 const slides = document.querySelectorAll(".slide");
 const playBtn = document.querySelector(".play-button");
@@ -6,6 +7,7 @@ const navigations = document.querySelectorAll(".slider__navigation")
 const pagination = document.querySelectorAll(".pagination-num")
 
 
+// active slide
 let activeOrder = 0;
 
 init();
@@ -14,8 +16,8 @@ function init() {
     // проходим в цикле слайды
     for (let i = 0; i < slides.length; i++) {
         const slide = slides[i];
-        // присваиваем дата атрибут с индексом
 
+        // присваиваем дата атрибут с индексом
         slide.dataset.order = i;
         slide.style.transform = "translateX(-50%)";
         slide.addEventListener('click', clickHandler)
@@ -42,6 +44,7 @@ function update() {
     
 
     for (let i = 0; i < slides.length; i++){
+        
         const leftSlide = document.querySelector(
             `.slide[data-order = "${activeOrder - i}"]`
         );
@@ -91,6 +94,7 @@ function clickHandler () {
 
 function navHandler (e) {
     e.preventDefault();
+    console.log(this.dataset)
     const {dir} = this.dataset;
 
     if (dir === 'prev') {
