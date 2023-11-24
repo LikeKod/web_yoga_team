@@ -55,20 +55,6 @@ section {
         padding: 0;
     }
 
-    /* Tablet */
-    @media (max-width: 1199px) {
-        width: 900px;
-    }
-
-    /* Mobile */
-    @media (max-width: 899px) {
-        width: 600px;
-    }
-
-    /* Mobile XS */
-    @media (max-width: 599px) {
-        width: 320px;
-    }
 }
 
 /* Utility */
@@ -103,8 +89,28 @@ section {
     font-weight: 400;
     line-height: 1.25;
     text-transform: uppercase;
+
+    @media (max-width: 1199.98px) {
+        font-size: 80px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 60px;
+    }
+
+    @media (max-width: 575.98px) {
+        font-size: 35px;
+    }
 }
 
+
+.courses{
+    display: none;
+}
+
+.footer {
+    display: none;
+}
 
 
 
