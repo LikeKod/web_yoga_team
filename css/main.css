@@ -225,9 +225,6 @@ section {
   margin: 0 auto;
   padding: 16px 0;
   background-color: #000; }
-  @media screen and (max-width: 1200px) {
-    .footer__copyright {
-      background-color: #fff; } }
 
 .footer__copyright p {
   text-align: center;
