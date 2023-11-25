@@ -30,7 +30,7 @@ body {
     line-height: 125px;
     color: transparent;
     -webkit-text-stroke: 1px white;
-    width: 1175px;
+    max-width: 1175px;
     text-align: start;
     display: inline-block;
 }
@@ -102,8 +102,8 @@ body {
 }
 
 .traning__slider {
-    width: 900px;
-    height: 670px;
+    max-width: 920px;
+    max-width: 670px;
     overflow: hidden;
     z-index: 50;
 }
@@ -126,7 +126,7 @@ body {
 .traning__text-discription {
     font-size: 28px;
     line-height: 173.5%;
-    width: 620px;
+    max-width: 620px;
     height: 147px;
 }
 
@@ -193,7 +193,7 @@ button:hover {
 
 .container {
     margin: 0 auto;
-    width: 1750px;
+    max-width: 1750px;
     background-color: black;
 }
 
@@ -925,7 +925,7 @@ p {
 
 .wrapper {
     margin: 0 auto;
-    width: 1521px;
+    max-width: 1521px;
     height: 100%;
 }
 
@@ -1172,4 +1172,102 @@ p {
     height: 35px;
     top: 83px;
     left: 60px;
+}
+
+/* =========================================адаптив================================================== */
+
+@media (max-width: 1199px) {
+
+    .traning__plans-top {
+        justify-content: start;
+    }
+
+    .traning__plans-title {
+        font-size: 90px;
+        margin: auto;
+    }
+
+    .traning__plans-description p {
+        font-size: 20px;
+    }
+
+    .traning__plans-body::after {
+        left: 13%;
+        top: 24%;
+    }
+
+    .traning__plans-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .traning__plan-block {
+        align-self: center;
+    }
+
+    .traning__plan-block p {
+        text-align: center;
+    }
+
+    .btn-box {
+        top: 735px;
+        ;
+        margin: auto
+    }
+
+    .title {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:991px) {
+    .traning__plans-title {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:767px) {
+    .traning__plans {
+        margin-left: 20%;
+    }
+
+    .traning__plans-title {
+        text-align: center;
+    }
+
+    .traning__plans-add {
+        display: none;
+
+    }
+
+    .wrapper {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width:480px) {
+    .traning__plans {
+        margin-left: 40%;
+    }
+
+    .traning__plans-title {
+        line-height: inherit;
+    }
+
+    .traning__plans-description {
+        display: none;
+    }
+
+    .traning__plans-body {
+        display: none;
+    }
+
+    .wrapper {
+        margin-left: 40%;
+    }
+    .title {
+        margin-left: 10%;
+        font-size: 40px;
+    }
 }
