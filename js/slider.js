@@ -7,6 +7,11 @@ const navigations = document.querySelectorAll(".slider__navigation")
 const pagination = document.querySelectorAll(".pagination-num")
 
 
+window.addEventListener('resize', function(event) {
+    update();
+}, true);
+
+
 // active slide
 let activeOrder = 0;
 
@@ -39,6 +44,7 @@ function update() {
     const {width} = wrapper.getBoundingClientRect(); // ширина контейнера
     const img = document.querySelector(".slide").getBoundingClientRect(); // ширина слайда
     const gap = 60; // отступ между слайдами
+    console.log('update')
 
     paginate ()
     
