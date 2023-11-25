@@ -609,7 +609,7 @@ ul > li{
 body {
   color: #fff;
   background-color: #000;
-  background-image: url("../img/Vector.svg");
+  background-image: url("../img/Vector1.svg");
   background-position: right;
   background-repeat: no-repeat;
 }
@@ -1142,9 +1142,6 @@ p {
   .subscribe_btn{
     /* margin-bottom: 50%; */
   }
-  /* .subscribe{
-    background-image: url(/img/om.jpg);
-  } */
   .subscribe h3{
     color: azure;
   }
@@ -1154,5 +1151,21 @@ p {
   .wrap_plans h1{
     font-size: 60px;;
     line-height: 1;
+}
+.item2 .quantiti_session::after{
+    content: 'RECOMENDED';
+    font-family: serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;   
+    position: absolute;
+    width: 181.65px;
+    height: 29.36px;
+    top: 36px;
+    left: 235px;
+    background-color: black;
+    transform: rotate(49.29deg);
+    color: white;
 }
 }
