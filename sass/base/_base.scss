@@ -103,9 +103,27 @@ section {
     font-weight: 400;
     line-height: 1.25;
     text-transform: uppercase;
+
+    @media (max-width: 1199.98px) {
+        font-size: 80px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 60px;
+    }
+
+    @media (max-width: 575.98px) {
+        font-size: 35px;
+    }
 }
 
 
+.subscribe{
+    display: none;
+}
 
+.footer{
+    display: none;
+}
 
 
