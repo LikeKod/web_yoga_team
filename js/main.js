@@ -15,3 +15,21 @@ new Swiper('.image-slider', {
   slidesPerView: 1,
   centeredSlides: true,
 });
+
+let offset = 0;
+const sliderList = document.querySelector('.traning__slider-list');
+
+document.querySelector('.next').addEventListener('click', function() {
+  offset += 900 ;
+  if (offset > 2700) {
+    offset = 0;
+  }
+  sliderList.style.left = -offset +'px';
+});
+document.querySelector('.prev').addEventListener('click', function() {
+  offset -= 900 ;
+  if (offset < 0) {
+    offset = 2700;
+  }
+  sliderList.style.left = -offset +'px';
+});
