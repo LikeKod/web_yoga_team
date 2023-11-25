@@ -6,7 +6,146 @@
 body {
   background-color: bisque;
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 1750px;
+  background-color: black;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1521px;
+  height: 100%;
+}
+
 /* menu */
+/* menu */
+/* menu */
+/* menu */
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header ::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  color: #000;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.header_nav-list {
+  display: flex;
+}
+
+.header__nav-link {
+  transition: all .3s;
+}
+
+.header__nav-link:hover {
+  color: #48B84A;
+}
+
+.header_nav-item {
+  margin-right: 100px;
+  padding: 0;
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 700px;
+}
+
+.header_nav-item:last-child {
+  margin-right: 0;
+}
+
+.header_user-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__top-basket {
+
+  margin-right: 25px;
+}
+
+.header_user-account {}
+
+.circle {
+  width: 52px;
+  height: 52px;
+  border: 1px solid #48B84A;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+}
+
+.triangle {
+  display: flex;
+  background: green;
+  position: relative;
+  color: #fff;
+}
+
+.triangle::after {
+  content: '';
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 10px;
+  bottom: -13px;
+  /* Положение треугольника */
+  border: 8px solid transparent;
+  /* Прозрачные границы */
+  border-top: 9px solid #FFFFFF;
+  /* Добавляем треугольник */
+}
+
+.header_burger {
+  display: none;
+}
+
+.header_burger span {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  top: 9px;
+
+}
+
+.header_burger:before,
+.header_burger:after {
+  content: ' ';
+  background-color: #FFF;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+}
+
+.header_burger:before {
+  top: 0;
+}
+
+.header_burger:after {
+  bottom: 0;
+}
 
 
 /* Workshops */
@@ -26,11 +165,6 @@ button:hover {
   cursor: pointer;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1750px;
-  background-color: black;
-}
 
 .wrap_workshop {
   margin: 0 auto;
@@ -648,11 +782,12 @@ body {
   margin-left: 23px;
 }
 
-.button {
+.button_why_us {
   font-family: Poppins;
   background: transparent;
   height: 55px;
   border: 1px solid #48B84A;
+  border-radius: 0;
   display: inline-block;
   width: 167px;
   margin-top: 30px;
@@ -762,11 +897,7 @@ body {
 
 /* Slider our teachers */
 
-.wrapper {
-  margin: 0 auto;
-  width: 1521px;
-  height: 100%;
-}
+
 
 
 .title {
@@ -1012,3 +1143,62 @@ body {
   top: 83px;
   left: 60px;
 }
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+/* Media */
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+
+/* 1750px */
+/* ------------------------------------------------------------------------------------------------ */
+/* 1750px */
+
+@media (max-width: 1750px) {}
+
+
+/* 1200px */
+/* ------------------------------------------------------------------------------------------------ */
+/* 1200px */
+@media (max-width: 1199px) {}
+
+/* menu */
+/* menu */
+/* menu */
+/* menu */
+@media screen and (max-width: 767px) {
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    right: 0;
+  }
+  /* why_us */
+  /* why_us */
+  /* why_us */
+  /* why_us */
+  .WHY_US{
+    margin-left: 15px;
+  }
+  .img_why_us{
+    display: none;
+  }
+  .container_why_us{
+    background-image: url("../img/Vector_ba.svg");
+    background-position: 800px;
+    background-repeat: no-repeat;
+  }
+  .information{
+    margin-left: 90px;
+  }
+  .title2{
+    display: flex;
+    justify-content: space-between;
+  }
+  }
