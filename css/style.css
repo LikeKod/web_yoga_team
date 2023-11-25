@@ -103,7 +103,6 @@ body {
 
 .traning__slider {
     max-width: 920px;
-    max-width: 670px;
     overflow: hidden;
     z-index: 50;
 }
@@ -1266,6 +1265,7 @@ p {
     .wrapper {
         margin-left: 40%;
     }
+
     .title {
         margin-left: 10%;
         font-size: 40px;
