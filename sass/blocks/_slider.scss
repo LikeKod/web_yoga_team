@@ -21,27 +21,36 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    // width: 100%;
-    aspect-ratio: 1.68/1;
+    
 
 }
 
 .slider__wrapper {
     position: relative;
-    width: 70%;
+    width: 100%;
+    aspect-ratio: 2.3/1;
+    margin-bottom: 10px;
+    overflow: hidden;
     
     @media (max-width: 575.98px) {
-        width: 70%;
+        width: 100%;
     }
 }
 
-.slide {
-    border-radius: 5px;
+.slide {    
     position: absolute;
     text-align: center;
-    transition: all 0.3s;        
-    width: 100%;
+    transition: all 0.3s;
+    width: 70%;
     border-radius: 8px;
+
+    @media (max-width: 767.98px) {
+        width: 85%;
+    }
+
+    @media (max-width: 575.98px) {
+        width: 100%;
+    }
 }
 
 
@@ -58,14 +67,14 @@
 
 
 .play-button {
-    margin-top:-35%;
-    margin-bottom: 58px;
+    margin-top:-38%;
+    margin-bottom: 35px;
     display: flex;
     justify-content: center;
 
     @media (max-width: 1199.98px) {
         height: 80px;
-        margin-bottom: 38px;
+        margin-bottom: 35px;
     }
 
     @media (max-width: 991.98px) {
@@ -75,10 +84,11 @@
 
     @media (max-width: 767.98px) {
         height: 40px;
+        margin-top: -40%;
     }
 
-    @media (max-width: 575.98px) {
-        height: 25px;
+    @media (max-width: 575.98px) {        
+        height: 35px;
         margin-bottom: 5px;
     }
 }
@@ -86,9 +96,9 @@
 .slider__content-text {
     font-size: 30px;
     font-weight: 500;
-    line-height: 1,25;
+    line-height: 1.25;
     color: $accent-color;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
 
     @media (max-width: 1199.98px) {
         margin-bottom: 14px;
@@ -114,9 +124,9 @@
 .slider__content-author {
     font-size: 30px;
     font-weight: 500;
-    line-height: 1,25;
+    line-height: 1.25;
     color: #FFFF;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
 
     @media (max-width: 1199.98px) {
         margin-bottom: 26px;
@@ -127,13 +137,12 @@
     }
 
     @media (max-width: 767.98px) {
-        font-size: 20px;
-        margin-bottom: 30px;
+        font-size: 18px;
+        margin-bottom: 10px;
     }
 
     @media (max-width: 575.98px) {
         font-size: 14px;
-        margin-bottom: 30px;
     }
 
 }
@@ -145,6 +154,10 @@
 
     @media (max-width: 767.98px) {
         gap: 10px;
+    }
+
+    @media (max-width: 575.98px) {
+        display: none;
     }
 }
 
@@ -192,19 +205,16 @@
 }
 
 .slider__btn {    
-    // margin-top: calc(42%);
     margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media (max-width: 991.98px) {
-        // margin-top: calc(50%);
         font-size: 16px;
     }
 
     @media (max-width: 767.98px) {
-        // margin-top: calc(55%);
         font-size: 14px;
     }
 
