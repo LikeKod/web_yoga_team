@@ -197,6 +197,7 @@ button:hover {
 }
 
 .container {
+    overflow: hidden;
     margin: 0 auto;
     max-width: 1750px;
     background-color: black;
@@ -1184,7 +1185,6 @@ p {
 @media (max-width: 1199px) {
     .container {
         width: 1200px;
-        overflow: hidden;
     }
 
     .traning__plans-top {
@@ -1230,14 +1230,12 @@ p {
 
     .wrapper {
         width: 1200px;
-        overflow: hidden;
     }
 }
 
 @media (max-width:991px) {
     .container {
         width: 1000px;
-        overflow: hidden;
     }
 
     .traning__plans-title {
@@ -1250,14 +1248,12 @@ p {
 
     .wrapper {
         width: 1000px;
-        overflow: hidden;
     }
 }
 
 @media (max-width:767px) {
     .container {
         width: 800px;
-        overflow: hidden;
     }
 
     .traning__plans-slide {
@@ -1298,7 +1294,6 @@ p {
 
     .wrapper {
         width: 800px;
-        overflow: hidden;
     }
 
     .swiper-slide__info, .image-slider__image {
@@ -1310,7 +1305,6 @@ p {
 @media (max-width:480px) {
     .container {
         width: 500px;
-        overflow: hidden;
     }
 
     .traning__plans-slide {
@@ -1323,7 +1317,6 @@ p {
 
     .wrapper {
         width: 500px;
-        overflow: hidden;
     }
 
     .socials {
