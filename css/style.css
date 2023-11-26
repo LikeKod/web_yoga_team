@@ -1307,17 +1307,40 @@ p {
 }
 
 @media (max-width:480px) {
-    .traning__plans {}
-
-    .traning__plans-title {
-        line-height: inherit;
+    .container {
+        width: 500px;
+        overflow: hidden;
     }
 
-    .traning__plans-description {}
+    .traning__plans-slide {
+        transform: scale(.5);
+    }
 
-    .traning__plans-body {}
+    .traning__plans-body::after {
+        left: 0;
+    }
 
-    .wrapper {}
+    .wrapper {
+        width: 500px;
+        overflow: hidden;
+    }
 
-    .title {}
+    .socials {
+        top: 528px;
+        left: 0;
+        width: 200px;
+        height: 50px;
+        border-radius: 0 0 28px 28px ;
+    }
+
+    .socials-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .socials-item {
+        margin: 0 10px 0 0;
+    }
 }
+
+@media (max-width:320px) {}
