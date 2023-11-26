@@ -33,3 +33,4 @@ document.querySelector('.prev').addEventListener('click', function() {
   }
   sliderList.style.left = -offset +'px';
 });
+

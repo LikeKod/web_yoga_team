@@ -108,12 +108,18 @@ body {
 }
 
 .traning__slider-list {
-    height: 670px;
     display: flex;
     position: relative;
     left: 0;
     transition: all ease 1s;
 }
+
+
+.traning__plans-slide img {
+    width: auto;
+    max-height: 100%;
+}
+
 
 .traning__text-title {
     color: #48B84A;
@@ -1176,14 +1182,18 @@ p {
 /* =========================================адаптив================================================== */
 
 @media (max-width: 1199px) {
+    .container {
+        width: 1200px;
+        overflow: hidden;
+    }
 
     .traning__plans-top {
-        justify-content: start;
+        justify-content: space-around;
     }
 
     .traning__plans-title {
         font-size: 90px;
-        margin: auto;
+        line-height: 100%;
     }
 
     .traning__plans-description p {
@@ -1191,7 +1201,7 @@ p {
     }
 
     .traning__plans-body::after {
-        left: 13%;
+        left: 16%;
         top: 24%;
     }
 
@@ -1210,7 +1220,6 @@ p {
 
     .btn-box {
         top: 735px;
-        ;
         margin: auto
     }
 
@@ -1218,17 +1227,55 @@ p {
         text-align: center;
     }
 
+    .wrapper {
+        width: 1200px;
+        overflow: hidden;
+    }
 }
 
 @media (max-width:991px) {
+    .container {
+        width: 1000px;
+        overflow: hidden;
+    }
+
     .traning__plans-title {
         font-size: 5rem;
+    }
+
+    .traning__plans-body::after {
+        left: 10%;
+    }
+
+    .wrapper {
+        width: 1000px;
+        overflow: hidden;
     }
 }
 
 @media (max-width:767px) {
-    .traning__plans {
-        margin-left: 20%;
+    .container {
+        width: 800px;
+        overflow: hidden;
+    }
+
+    .traning__plans-slide {
+        transform: scale(.6);
+    }
+
+    .traning__plans-description p {
+        margin: 50px auto auto;
+    }
+
+    .traning__slider-list {
+        justify-content: center;
+    }
+
+    .traning__plans-body::after {
+        width: 600px;
+        height: 600px;
+        top: 35%;
+        left: 12%;
     }
 
     .traning__plans-title {
@@ -1237,17 +1284,24 @@ p {
 
     .traning__plans-add {
         display: none;
+    }
 
+    .btn-box {
+        top: 600px;
     }
 
     .wrapper {
-        margin-left: 20%;
+        width: 800px;
+        overflow: hidden;
     }
+.swiper-slide__info, .image-slider__image {
+    opacity: 0;
+}
+
 }
 
 @media (max-width:480px) {
     .traning__plans {
-        margin-left: 40%;
     }
 
     .traning__plans-title {
@@ -1255,19 +1309,14 @@ p {
     }
 
     .traning__plans-description {
-        display: none;
     }
 
     .traning__plans-body {
-        display: none;
     }
 
     .wrapper {
-        margin-left: 40%;
     }
 
     .title {
-        margin-left: 10%;
-        font-size: 40px;
     }
 }
