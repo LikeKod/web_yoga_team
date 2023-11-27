@@ -172,17 +172,27 @@ section {
   text-align: center;
   margin-bottom: 64px; }
 
-.subscribe {
+  .newsletter_container {
+    max-width: 1610px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* Tablet */
+    /* Mobile */
+    /* Mobile XS */ }
+
+.newsletter {
   padding-top: 24px;
   padding-bottom: 48px; }
 
-.subscribe__wrapper {
+.newsletter__wrapper {
   text-align: center; }
 
 .section__title {
   margin-bottom: 29px; }
 
-.subscribe__message {
+.newsletter__message {
   color: #FFF;
   font-family: 'Ramabhadra', sans-serif;
   font-size: 20px;
@@ -191,9 +201,9 @@ section {
   text-transform: uppercase;
   margin-bottom: 75px; }
 
-.subscribe__block .input {
+.newsletter__block .input {
   margin-right: 8px; }
-.subscribe__block .button {
+.newsletter__block .button {
   width: 222px; }
 
 .footer__top {
