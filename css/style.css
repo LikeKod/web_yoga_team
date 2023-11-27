@@ -15,7 +15,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 1521px;
+  max-width: 1521px;
   height: 100%;
 }
 
@@ -118,6 +118,7 @@ body {
 
 .header_burger {
   display: none;
+  z-index: 1;
 }
 
 .header_burger span {
@@ -1161,23 +1162,124 @@ body {
 
 @media (max-width: 1750px) {}
 
-
 /* 1200px */
 /* ------------------------------------------------------------------------------------------------ */
 /* 1200px */
-@media (max-width: 1199px) {}
+  @media screen and (max-width: 1200px) {
+    .header__logo{
+      margin-left: 30px;
+      margin-top: 5px;
+      margin-right: 120px;
+      z-index: 10;
+    }
+    .header_burger {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 20px;
+      right: 0;
+      z-index: 12;
+    }
+    .header_burger .active{
+    transform: rotate(45.25px);
+    }
+    .header_nav-list{
+      display: none;
+      position: fixed;
+      padding-top: 100px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      z-index: 11;
+    }
+    .header_nav-item{
+      padding-left: 20px;
+      padding-top: 30px;
+      font-size: 50px;
+    }
+    .header_user-nav{
+      display: none;
+    }
+    /* why_us */
+    /* why_us */
+    /* why_us */
+    /* why_us */
+    .WHY_US{
+      margin-left: 15px;
+    }
+    .img_why_us{
+      display: none;
+    }
+    .container_why_us{
+      background-image: url("../img/Vector_ba.svg");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .rectangle{
+      display: none;
+    }
+    .information{
+      display: block;
+  
+    }
+    .title2{
+      margin-left: 0;
+    }
+    .text2{
+      margin-top: 80px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .quotes_t{
+      display: none;
+    }
+    .quotes_{
+      display: none;
+    }
+    }
 
-/* menu */
+    /* menu */
 /* menu */
 /* menu */
 /* menu */
 @media screen and (max-width: 767px) {
+  .header__logo{
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-right: 120px;
+    z-index: 10;
+  }
   .header_burger {
     display: block;
     position: relative;
     width: 30px;
     height: 20px;
     right: 0;
+    z-index: 12;
+  }
+  .header_burger .active{
+  transform: rotate(45.25px);
+  }
+  .header_nav-list{
+    display: block;
+    position: fixed;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 11;
+  }
+  .header_nav-item{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 50px;
+  }
+  .header_user-nav{
+    display: none;
   }
   /* why_us */
   /* why_us */
@@ -1185,20 +1287,46 @@ body {
   /* why_us */
   .WHY_US{
     margin-left: 15px;
+
+  }
+  .text_why_us{
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 19px;
+    padding-top: 25px;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+    text-align: justify;
+    line-height: 1.6;
   }
   .img_why_us{
     display: none;
   }
   .container_why_us{
+    max-width: 767px;
     background-image: url("../img/Vector_ba.svg");
-    background-position: 800px;
+    background-position: right;
     background-repeat: no-repeat;
   }
+  .rectangle{
+    display: none;
+  }
   .information{
-    margin-left: 90px;
+    display: block;
+
   }
   .title2{
-    display: flex;
-    justify-content: space-between;
+    margin-left: 0;
+  }
+  .text2{
+    margin-top: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .quotes_t{
+    display: none;
+  }
+  .quotes_{
+    display: none;
   }
   }

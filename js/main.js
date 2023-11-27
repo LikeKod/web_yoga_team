@@ -15,3 +15,8 @@ new Swiper('.image-slider', {
   slidesPerView: 1,
   centeredSlides: true,
 });
+$(document).reaby(function(){
+  $(".header_burger").click(Function(Event){
+    $(".header_burger,.header_nav-list").toggClass(".active"),
+  })
+  })
