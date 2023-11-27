@@ -1,0 +1,13 @@
+.navbar {
+}
+.navbar__list {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.navbar__list-item {
+    color: #FFFF;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}

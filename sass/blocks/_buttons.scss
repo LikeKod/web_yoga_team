@@ -1,0 +1,39 @@
+.button {
+    min-width: 200px;
+    padding: 15px 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid $accent-color;
+    background-color: $accent-color;
+
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.81;
+    
+    @media (max-width: 1399.98px) {
+        padding: 10px 20px;
+    }
+
+    @media (max-width: 991.98px) {
+        min-width: 170px;
+        font-size: 18px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 14px;
+        min-width: 130px;
+        padding: 8px 15px;
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 5px 15px;
+        
+    }
+}
+.button-gray {
+    background-color: $second-color;
+    border: none;
+    font-weight: 500;
+    line-height: 1.735;
+}

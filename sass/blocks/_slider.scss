@@ -1,0 +1,247 @@
+.courses{
+    
+}
+
+.courses__title{
+    text-align: center;
+    margin-bottom: 64px;
+
+    @media (max-width: 1199.98px) {
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 767.98px) {
+        margin-bottom: 30px;
+    }
+
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.slider__wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2.3/1;
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+    @media (max-width: 575.98px) {
+        width: 100%;
+    }
+}
+
+.slide {    
+    position: absolute;
+    text-align: center;
+    transition: all 0.3s;
+    width: 70%;
+    border-radius: 8px;
+
+    @media (max-width: 767.98px) {
+        width: 85%;
+    }
+
+    @media (max-width: 575.98px) {
+        width: 100%;
+    }
+}
+
+
+.slide img{
+    width: 100%;
+    aspect-ratio: 1.68/1;
+    object-fit: cover;
+    position: relative;
+    z-index: -2;
+    -webkit-mask-image: linear-gradient(to top, transparent 10%, black 87.86%);
+    mask-image: linear-gradient(to top, transparent 10%, black 87.86%);
+    border-radius: inherit;
+}
+
+
+.play-button {
+    margin-top:-38%;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1199.98px) {
+        height: 80px;
+        margin-bottom: 35px;
+    }
+
+    @media (max-width: 991.98px) {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 767.98px) {
+        height: 40px;
+        margin-top: -40%;
+    }
+
+    @media (max-width: 575.98px) {        
+        height: 35px;
+        margin-bottom: 5px;
+    }
+}
+
+.slider__content-text {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: $accent-color;
+    margin-bottom: 10px;
+
+    @media (max-width: 1199.98px) {
+        margin-bottom: 14px;
+    }
+
+    @media (max-width: 991.98px) {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    @media (max-width: 575.98px) {
+        font-size: 10px;
+    }
+
+
+}
+
+.slider__content-author {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #FFFF;
+    margin-bottom: 30px;
+
+    @media (max-width: 1199.98px) {
+        margin-bottom: 26px;
+    }
+
+    @media (max-width: 991.98px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 575.98px) {
+        font-size: 14px;
+    }
+
+}
+
+.slider__buttons-row {
+    display: flex;
+    column-gap: 25px;
+    justify-content: center;
+
+    @media (max-width: 767.98px) {
+        gap: 10px;
+    }
+
+    @media (max-width: 575.98px) {
+        display: none;
+    }
+}
+
+
+.lable::after{
+    position: absolute;
+    content: "Beginner";
+    right: -53.4px;
+    top: 26px;
+
+    color: #FFF;
+    font-family: Ramabhadra, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    padding:  24px 10px 24px 0;
+    border-radius: 0 28px 28px 0;
+    background-color: #48B84A;
+
+    @media (max-width: 1199.98px) {
+        font-size: 30px;
+        right: -47.1px;
+    }
+
+    @media (max-width: 991.98px) {
+        font-size: 20px;
+        right: -35px;
+        border-radius: 0 20px 20px 0;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 16px;
+        right: -30px;
+        border-radius: 0 16px 16px 0;
+    }
+
+    @media (max-width: 575.98px) {
+        font-size: 12px;
+        right: -21.0px;
+        padding:  10px 6px 10px 0;
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+.slider__btn {    
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 991.98px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 767.98px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 575.98px) {
+        font-size: 14px;
+    }
+    
+}
+
+.slider__btn-prev,
+.slider__btn-next {
+    cursor: pointer;
+
+    @media (max-width: 991.98px) {
+        width: 24px;
+    }
+
+    @media (max-width: 767.98px) {
+        width: 28px;
+    }
+
+    @media (max-width: 575.98px) {
+        width: 24px;
+    }
+}
+
+.slider-pagination {
+    color: #626262;
+}
+
