@@ -653,7 +653,7 @@ p {
   padding-left: 23px;
 }
 
-.button {
+/* .button {
   font-family: Poppins;
   background: transparent;
   height: 55px;
@@ -666,7 +666,7 @@ p {
   background-image: url('../img/Union.svg');
   background-repeat: no-repeat;
   background-position: 98px;
-}
+} */
 
 .button:hover{
     cursor: pointer;
@@ -1034,8 +1034,15 @@ p {
   /* wrap_plans */
   /* ---------------------------------------------------------------------------------------------- */
   /* wrap_plans */
+    .wrap_plans {
+        height: 1400px;
+    }
     .wrap_plans h1{
         margin: 0 auto;
+
+    }
+    .grid_container{
+        min-height: 770px;
     }
 }
 /* 767px */
@@ -1109,6 +1116,12 @@ p {
   /* wrap_plans */
   .wrap_plans h1{
     font-size: 70px;;
+}
+.wrap_plans {
+    height: 2000px;
+}
+.grid_container{
+    min-height: 770px;
 }
 }
 /* 480px */
