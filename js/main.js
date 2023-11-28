@@ -15,12 +15,6 @@ new Swiper('.image-slider', {
   slidesPerView: 1,
   centeredSlides: true,
 });
-$(document).ready(function() {
-    $('.header_burger').click(function() {
-    $('.header_burger,.header_nav-list').toggleClass('active');;
-  });
-
-});
 
 
 let offset = 0;
@@ -41,3 +35,10 @@ document.querySelector('.prev').addEventListener('click', function() {
   sliderList.style.left = -offset +'px';
 });
 
+
+$(document).ready(function() {
+    $('.header_burger').click(function() {
+    $('.header_burger,.header_nav-list').toggleClass('active');;
+  });
+
+});
