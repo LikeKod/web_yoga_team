@@ -958,11 +958,14 @@ background-position: 98px;
 }
 
 .information {
-display: flex;
+
 max-width: 1580px;
 padding: 157px 31.83px;
 margin: 0 auto;
 line-height: 1.3;
+}
+.flex{
+display: flex;
 }
 
 .rectangle {
@@ -1014,23 +1017,21 @@ font-size: 100px;
 color: transparent;
 -webkit-text-stroke: 1px white;
 -webkit-background-clip: text;
-text-align: center;
+text-align: right;
+position: relative;
+top: 170px;
 }
 
 .text2 {
-display: inline-block;
 font-family: Poppins;
 font-size: 25px;
-padding-top: 25px;
+padding-top: 144px;
 padding-left: 150px;
 padding-right: 113px;
 word-wrap: break-word;
 margin-bottom: 25px;
 text-align: justify;
 line-height: 43.38px;
-position: relative;
-top: -67px;
-Height: 277px;
 }
 .btn-box_why_us{
   position: relative;
@@ -1039,14 +1040,14 @@ Height: 277px;
 }
 
 .quotes_t {
-padding-left: 76px;
+padding-left: 66px;
 position: relative;
-top: -57px;
+top: 117px;
 }
 .quotes_b {
 padding-left: 938px;
 position: relative;
-top: -140px;
+top: -96px;
 }
 
 /* Slider our teachers */
@@ -1558,7 +1559,7 @@ top: -140px;
     .header__logo{
         margin-left: 30px;
         margin-top: 5px;
-        margin-right: 120px;
+        margin-right: 567px;
         z-index: 12;
       }
       .header_burger {
@@ -1623,7 +1624,7 @@ top: -140px;
         line-height: 1.6;
       }
       .img_why_us{
-        display: none;
+      display: none;
       }
       .container_why_us{
         background-image: url("../img/Vector_ba.svg");
@@ -1631,21 +1632,31 @@ top: -140px;
         background-repeat: no-repeat;
       }
       .rectangle{
-        display: none;
+        position: relative;
+        left: 183px;
       }
-      .information{
-        display: block;
-      }
-        .flex{
-          max-width:842px;
-        }
       .title2{
+        text-align: center;
+        padding-left: 0;
         margin-left: 0;
+        position: relative;
+        top: 0;
       }
       .text2{
-        margin-top: 80px;
-        margin-left: 15px;
+        display: block;
+        margin-top: 611px;
         margin-right: 15px;
+        padding-top: 144px;
+        padding-left: 0;
+        padding-right: 410px;
+        text-align: justify;
+        position: relative;
+        left: -283px;
+      }
+      .btn-box_why_us{
+        margin-top: 58px;
+        position: relative;
+        left: 0;
       }
       .quotes_t{
         display: none;
@@ -1722,108 +1733,115 @@ top: -140px;
 /* menu */
 /* menu */
 /* menu */
-    .header__logo{
-        margin-left: 30px;
-        margin-top: 5px;
-        margin-right: 120px;
-        z-index: 12;
-      }
-      .header_burger {
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 20px;
-        right: 0;
-        z-index: 12;
-      }
-      .header_burger.active span{
-        transform: scale(0);
-        }
-      .header_burger.active::before{
-      transform: rotate(45deg);
-      top: 9px;
-      }
-      .header_burger.active::after{
-        transform: rotate(-45deg);
-        bottom: 9px;
-        }
-      .header_nav-list{
-        display: block;
-        position: fixed;
-        padding-top: 100px;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #000;
-        z-index: 11;
-      }
-      .header_nav-list.active{
-        top: 0;
-        transition: all 0.3s ease 0s;
-      }
-      .header_nav-item{
-        padding-left: 20px;
-        padding-top: 30px;
-        font-size: 50px;
-      }
-      .header_user-nav{
-        display: none;
-      }
-      /* why_us */
-      /* why_us */
-      /* why_us */
-      /* why_us */
-      .WHY_US{
-        margin-left: 15px;
-        max-width:595px;
-      
-      }
-      .title_why_us{
-        font-size: 80px;
-      }
-      .text_why_us{
-        display: inline-block;
-        font-family: Poppins;
-        font-size: 19px;
-        padding-top: 25px;
-        word-wrap: break-word;
-        margin-bottom: 25px;
-        text-align: justify;
-        line-height: 1.6;
-      }
-      .img_why_us{
-        display: none;
-      }
-      .container_why_us{
-        max-width: 767px;
-        background-image: url("../img/Vector_ba.svg");
-        background-position: right;
-        background-repeat: no-repeat;
-      }
-      .rectangle{
-        display: none;
-      }
-      .information{
-        display: block;
-      }
-        .flex{
-          max-width:595px;
-        }
-      .title2{
-        margin-left: 0;
-      }
-      .text2{
-        margin-top: 80px;
-        margin-left: 15px;
-        margin-right: 15px;
-      }
-      .quotes_t{
-        display: none;
-      }
-      .quotes_{
-        display: none;
-      }
+.header__logo{
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-right: 567px;
+  z-index: 12;
+}
+.header_burger {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  right: 0;
+  z-index: 12;
+}
+.header_burger.active span{
+  transform: scale(0);
+  }
+.header_burger.active::before{
+transform: rotate(45deg);
+top: 9px;
+}
+.header_burger.active::after{
+  transform: rotate(-45deg);
+  bottom: 9px;
+  }
+.header_nav-list{
+  display: block;
+  position: fixed;
+  padding-top: 100px;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 11;
+}
+.header_nav-list.active{
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.header_nav-item{
+  padding-left: 20px;
+  padding-top: 30px;
+  font-size: 50px;
+}
+.header_user-nav{
+  display: none;
+}
+/* why_us */
+/* why_us */
+/* why_us */
+/* why_us */
+.WHY_US{
+  margin-left: 15px;
+  max-width:842px;
+
+}
+.text_why_us{
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 19px;
+  padding-top: 25px;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+  text-align: justify;
+  line-height: 1.6;
+}
+.img_why_us{
+display: none;
+}
+.container_why_us{
+  background-image: url("../img/Vector_ba.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.rectangle{
+  position: relative;
+  left: 40px;
+}
+.title2{
+  font-size: 70px;
+  text-align: center;
+  padding-left: 0;
+  margin-left: 0;
+  position: relative;
+  top: 0;
+}
+.text2{
+  display: block;
+  margin-top: 611px;
+  margin-right: 15px;
+  padding-top: 144px;
+  padding-left: 0;
+  padding-right: 410px;
+  text-align: justify;
+  position: relative;
+  left: -422px;
+}
+.btn-box_why_us{
+  margin-top: 58px;
+  position: relative;
+  left: 0;
+}
+.quotes_t{
+  display: none;
+}
+.quotes_{
+  display: none;
+}
 
   /* Workshops */
   /* --------------------------------------------------------------------------------------------- */
@@ -1987,22 +2005,29 @@ top: -140px;
         background-repeat: no-repeat;
       }
       .rectangle{
-        display: none;
+      display: none;
       }
-      .information{
-        display: block;
-      }
-        .flex{
-          max-width:396px;
-        }
       .title2{
+        font-size: 70px;
+        text-align: center;
+        padding-left: 0;
         margin-left: 0;
-        font-size: 80px;
+        position: relative;
+        top: 0;
       }
       .text2{
-        margin-top: 80px;
-        margin-left: 15px;
-        margin-right: 15px;
+        display: block;
+        margin-top: 0;
+        margin-right: 223px;
+        padding-top: 56px;
+        padding-left: 364px;
+        padding-right: 0;
+        text-align: justify;
+      }
+      .btn-box_why_us{
+        margin-top: 58px;
+        position: relative;
+        left: 0;
       }
       .quotes_t{
         display: none;
