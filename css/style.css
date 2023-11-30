@@ -933,6 +933,9 @@ display: inline;
 padding-left: 23px;
 max-width: none; 
 }
+.img_why_us img {
+max-width: 500%;
+  }
 
 /* .button {
 font-family: Poppins;
@@ -1609,12 +1612,13 @@ top: -96px;
       /* why_us */
       /* why_us */
       .WHY_US{
+        display: block;
         margin-left: 15px;
         max-width:842px;
     
       }
       .text_why_us{
-        display: inline-block;
+
         font-family: Poppins;
         font-size: 19px;
         padding-top: 25px;
@@ -1624,7 +1628,10 @@ top: -96px;
         line-height: 1.6;
       }
       .img_why_us{
-      display: none;
+        display: block;
+        margin-top: 1075px;
+        position: relative;
+        left: -663px;
       }
       .container_why_us{
         background-image: url("../img/Vector_ba.svg");
@@ -1801,7 +1808,10 @@ top: 9px;
   line-height: 1.6;
 }
 .img_why_us{
-display: none;
+  display: block;
+  margin-top: 1075px;
+  position: relative;
+  left: -663px;
 }
 .container_why_us{
   background-image: url("../img/Vector_ba.svg");
@@ -1996,7 +2006,10 @@ display: none;
         line-height: 1.6;
       }
       .img_why_us{
-        display: none;
+        display: block;
+        margin-top: 1075px;
+        position: relative;
+        left: -663px;
       }
       .container_why_us{
         max-width: 767px;
