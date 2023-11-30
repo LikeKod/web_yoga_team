@@ -1664,10 +1664,12 @@ background-position: 98px;
     background-position: right;
     background-repeat: no-repeat;
   }
-
+  .flex {
+    display: block;
+}
   .rectangle {
-    position: relative;
-    left: 183px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .title2 {
@@ -1676,31 +1678,28 @@ background-position: 98px;
     margin-left: 0;
     position: relative;
     top: 0;
+
+
   }
 
   .text2 {
-    display: block;
-    margin-top: 611px;
-    margin-right: 15px;
-    padding-top: 144px;
-    padding-left: 0;
-    padding-right: 410px;
-    text-align: justify;
-    position: relative;
-    left: -283px;
+padding-top: 45px;
+padding-left: 0; 
+padding-right: 0;
   }
 
   .btn-box_why_us {
-    margin-top: 58px;
-    position: relative;
-    left: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
   }
 
   .quotes_t {
     display: none;
   }
 
-  .quotes_ {
+  .quotes_b{
     display: none;
   }
 
@@ -1872,14 +1871,15 @@ background-position: 98px;
     background-position: right;
     background-repeat: no-repeat;
   }
-
+  .flex {
+    display: block;
+}
   .rectangle {
-    position: relative;
-    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .title2 {
-    font-size: 70px;
     text-align: center;
     padding-left: 0;
     margin-left: 0;
@@ -1888,22 +1888,16 @@ background-position: 98px;
   }
 
   .text2 {
-    display: block;
-    margin-top: 611px;
-    margin-right: 15px;
-    padding-top: 144px;
-    padding-left: 0;
-    padding-right: 410px;
-    text-align: justify;
-    position: relative;
-    left: -422px;
+padding-top: 45px;
+padding-left: 0; 
+padding-right: 0;
   }
 
   .btn-box_why_us {
-    margin-top: 58px;
-    position: relative;
-    left: 0;
-  }
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
   .quotes_t {
     display: none;
@@ -1999,6 +1993,140 @@ background-position: 98px;
   }
 }
 
+@media (max-width: 598px){
+/* menu */
+/* menu */
+/* menu */
+/* menu */
+.header__logo{
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-right: 567px;
+  z-index: 12;
+}
+.header_burger {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  right: 0;
+  z-index: 12;
+}
+.header_burger.active span{
+  transform: scale(0);
+  }
+
+  .header_burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header_burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header_nav-list {
+    display: block;
+    position: fixed;
+    padding-top: 100px;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 11;
+  }
+
+  .header_nav-list.active {
+    top: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header_nav-item {
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 50px;
+  }
+
+  .header_user-nav {
+    display: none;
+  }
+
+  /* why_us */
+  /* why_us */
+  /* why_us */
+  /* why_us */
+  .WHY_US {
+    margin-left: 15px;
+    max-width: 842px;
+
+  }
+
+  .text_why_us {
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 19px;
+    padding-top: 25px;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+    text-align: justify;
+    line-height: 1.6;
+  }
+
+  .img_why_us {
+    display: block;
+    margin-top: 1075px;
+    position: relative;
+    left: -663px;
+  }
+
+  .container_why_us {
+    background-image: url("../img/Vector_ba.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .flex {
+    display: block;
+    width: 600px;
+
+}
+  .rectangle {
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  .title2 {
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+    position: relative;
+    top: 0;
+    width: 600px;
+  }
+
+  .text2 {
+padding-top: 45px;
+padding-left: 0; 
+padding-right: 0;
+width: 600px;
+  }
+
+  .btn-box_why_us {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+  .quotes_t {
+    display: none;
+  }
+
+  .quotes_ {
+    display: none;
+  }
+}
 /* 480px */
 /* ------------------------------------------------------------------------------------------------ */
 /* 480px */
@@ -2089,29 +2217,33 @@ background-position: 98px;
         background-position: right;
         background-repeat: no-repeat;
       }
-      .rectangle{
-      display: none;
+      .flex {
+          display: block;
+      
       }
-      .title2{
-        font-size: 70px;
-        text-align: center;
-        padding-left: 0;
-        margin-left: 0;
+        .rectangle {
+          margin-left: auto;
+          margin-right: auto;
+          
+        }
+      
+        .title2 {
+          text-align: center;
+          padding-left: 0;
+          margin-left: 0;
+          position: relative;
+          top: 0;
+        }
+      
+        .text2 {
+      padding-top: 45px;
+      padding-left: 0; 
+      padding-right: 0;
+        }
+      
+        .btn-box_why_us {
         position: relative;
         top: 0;
-      }
-      .text2{
-        display: block;
-        margin-top: 0;
-        margin-right: 223px;
-        padding-top: 56px;
-        padding-left: 364px;
-        padding-right: 0;
-        text-align: justify;
-      }
-      .btn-box_why_us{
-        margin-top: 58px;
-        position: relative;
         left: 0;
       }
       .quotes_t{
