@@ -37,8 +37,8 @@ document.querySelector('.prev').addEventListener('click', function() {
 
 
 $(document).ready(function() {
-    $('.header_burger').click(function() {
-    $('.header_burger,.header_nav-list').toggleClass('active');;
-  });
+  $('.header_burger').click(function() {
+  $('.header_burger,.header_nav-list').toggleClass('active');;
+});
 
 });
