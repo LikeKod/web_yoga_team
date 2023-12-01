@@ -26,6 +26,7 @@ body {
   left: 0;
   height: 100%;
   color: #000;
+  z-index: -10;
 }
 
 .header__top {
@@ -908,9 +909,6 @@ ul>li {
 body {
   color: #fff;
   background-color: #000;
-  background-image: url("../img/Vector1.svg");
-  background-position: right;
-  background-repeat: no-repeat;
 }
 
 
@@ -920,9 +918,15 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   color: white;
+  background-image: url("../img/Vector_ba.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+
+
 }
 
-.title {
+
+.title_why_us {
   font-family: Ramabhadra;
   padding-top: 185px;
   font-size: 100px;
@@ -932,7 +936,7 @@ body {
   width: 600px;
 }
 
-.text {
+.text_why_us {
   display: inline-block;
   font-family: Poppins;
   font-size: 19px;
@@ -976,12 +980,14 @@ background-position: 98px;
 }
 
 .information {
-  display: flex;
   max-width: 1580px;
   padding: 157px 31.83px;
   margin: 0 auto;
+  line-height: 1.1;
 }
-
+.flex{
+  display: flex;
+}
 .rectangle {
   width: 440.34px;
   height: 692.34px;
@@ -1025,35 +1031,39 @@ background-position: 98px;
 
 .title2 {
   font-family: Ramabhadra;
-  padding-top: 7px;
-  padding-left: 259px;
+  padding-left: 568px;
   font-size: 100px;
   color: transparent;
   -webkit-text-stroke: 1px white;
   -webkit-background-clip: text;
-  text-align: center;
+  text-align: right;
+  position: relative;
+  top: 190px;
 }
 
 .text2 {
   display: inline-block;
   font-family: Poppins;
   font-size: 25px;
-  padding-top: 25px;
-  padding-left: 150px;
-  padding-right: 113px;
+  margin-top: 162px;
+  margin-left: 150px;
+  margin-right: 113px;
   word-wrap: break-word;
-  margin-bottom: 25px;
+  margin-bottom: 0;
   text-align: justify;
   line-height: 43.38px;
   position: relative;
-  top: -67px;
+  top: -24px;
   Height: 277px;
+}
+.btn-box_information{
+  margin-left: 150px;
 }
 
 .quotes_t {
   padding-left: 76px;
   position: relative;
-  top: -57px;
+  top: 125px;
 }
 
 .quotes_b {
@@ -1342,6 +1352,122 @@ background-position: 98px;
 /* ------------------------------------------------------------------------------------------------ */
 /* 1200px */
 @media (max-width: 1199px) {
+/* menu */
+/* menu */
+/* menu */
+/* menu */
+  .header__logo{
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-right: 120px;
+    z-index: 12;
+  }
+  .header_burger {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    right: 0;
+    z-index: 12;
+
+  }
+  .header_burger.active span{
+    transform: scale(0);
+    }
+  .header_burger.active::before{
+  transform: rotate(45deg);
+  top: 9px;
+  }
+  .header_burger.active::after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+    }
+  .header_nav-list{
+    display: block;
+    position: fixed;
+    padding-top: 100px;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 11;
+  }
+  .header_nav-list.active{
+    top: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header_nav-item{
+    position: relative;
+    padding-left: 172px;
+    padding-top: 30px;
+    font-size: 50px;
+  }
+  .header_user-nav{
+    display: none;
+  }
+  /* why_us */
+  /* why_us */
+  /* why_us */
+  /* why_us */
+  .WHY_US{
+    margin-left: 15px;
+    max-width:842px;
+
+  }
+  .text_why_us{
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 19px;
+    padding-top: 25px;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  .container_why_us{
+    display: block;
+  }
+  .img_why_us{
+    padding-top: 0;
+    display: block;
+  }
+  .container_why_us{
+    background-image: url("../img/Vector_ba.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  .rectangle{
+    margin: auto;
+  }
+  .information{
+    display: block;
+  }
+    .flex{
+  display: block;
+    }
+  .title2{
+  display: block;
+  text-align: center;
+  padding-left: 0;
+  position: relative;
+  top: 0;
+  }
+  .text2{
+  display: block;
+  margin-top: 68px;
+  margin-left: 0;
+  margin-right: 0;
+  }
+  .btn-box_information{
+  
+  }
+  .quotes_t{
+    display: none;
+  }
+  .quotes_b{
+    display: none;
+  }
 
   /* Workshops */
   /* --------------------------------------------------------------------------------------------- */
@@ -1456,7 +1582,6 @@ background-position: 98px;
   .title {
     text-align: center;
   }
-
 }
 
 /* 991px */
@@ -1470,11 +1595,253 @@ background-position: 98px;
   }
 
 }
+@media (max-width: 899px) {
+  /* menu */
+  /* menu */
+  /* menu */
+  /* menu */
+    .header__logo{
+      margin-left: 30px;
+      margin-top: 5px;
+      margin-right: 120px;
+      z-index: 12;
+    }
+    .header_burger {
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 20px;
+      right: 0;
+      z-index: 12;
+  
+    }
+    .header_burger.active span{
+      transform: scale(0);
+      }
+    .header_burger.active::before{
+    transform: rotate(45deg);
+    top: 9px;
+    }
+    .header_burger.active::after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+      }
+    .header_nav-list{
+      display: block;
+      position: fixed;
+      padding-top: 100px;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      z-index: 11;
+    }
+    .header_nav-list.active{
+      top: 0;
+      transition: all 0.3s ease 0s;
+    }
+    .header_nav-item{
+      position: relative;
+      padding-left: 172px;
+      padding-top: 30px;
+      font-size: 50px;
+    }
+    .header_user-nav{
+      display: none;
+    }
+    /* why_us */
+    /* why_us */
+    /* why_us */
+    /* why_us */
+    .WHY_US{
+      margin-left: 15px;
+      max-width:842px;
+  
+    }
+    .text_why_us{
+      display: inline-block;
+      font-family: Poppins;
+      font-size: 19px;
+      padding-top: 25px;
+      word-wrap: break-word;
+      margin-bottom: 25px;
+      text-align: justify;
+      line-height: 1.6;
+    }
+    .container_why_us{
+      display: block;
+    }
+    .img_why_us{
+      padding-top: 0;
+      display: block;
+    }
+    .img_why_us img{
+      width: 521px;
+      }
+    .container_why_us{
+      background-image: url("../img/Vector_ba.svg");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .rectangle{
+      margin: auto;
+    }
+    .information{
+      display: block;
+    }
+      .flex{
+    display: block;
+      }
+    .title2{
+    display: block;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    top: 0;
+    }
+    .text2{
+    display: block;
+    margin-top: 68px;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .btn-box_information{
+    
+    }
+    .quotes_t{
+      display: none;
+    }
+    .quotes_b{
+      display: none;
+    }
+  }
 
 /* 767px */
 /* ------------------------------------------------------------------------------------------------ */
 /* 767px */
 @media (max-width: 767px) {
+  /* menu */
+/* menu */
+/* menu */
+/* menu */
+.header__logo{
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-right: 120px;
+  z-index: 12;
+}
+.header_burger {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  right: 0;
+  z-index: 12;
+
+}
+.header_burger.active span{
+  transform: scale(0);
+  }
+.header_burger.active::before{
+transform: rotate(45deg);
+top: 9px;
+}
+.header_burger.active::after{
+  transform: rotate(-45deg);
+  bottom: 9px;
+  }
+.header_nav-list{
+  display: block;
+  position: fixed;
+  padding-top: 100px;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 11;
+}
+.header_nav-list.active{
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.header_nav-item{
+  position: relative;
+  padding-left: 172px;
+  padding-top: 30px;
+  font-size: 50px;
+}
+.header_user-nav{
+  display: none;
+}
+/* why_us */
+/* why_us */
+/* why_us */
+/* why_us */
+.WHY_US{
+  margin-left: 15px;
+  max-width:842px;
+
+}
+.text_why_us{
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 19px;
+  padding-top: 25px;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+  text-align: justify;
+  line-height: 1.6;
+}
+.container_why_us{
+  display: block;
+
+}
+.img_why_us{
+  padding-top: 0;
+  display: block;
+}
+.img_why_us img{
+width: 521px;
+}
+.container_why_us{
+  background-image: url("../img/Vector_ba.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.rectangle{
+  margin: auto;
+}
+.information{
+  display: block;
+
+}
+  .flex{
+display: block;
+  }
+.title2{
+display: block;
+text-align: center;
+padding-left: 0;
+position: relative;
+top: 0;
+}
+.text2{
+display: block;
+margin-top: 68px;
+margin-left: 0;
+margin-right: 0;
+}
+.btn-box_information{
+
+}
+.quotes_t{
+  display: none;
+}
+.quotes_b{
+  display: none;
+}
 
   /* Workshops */
   /* --------------------------------------------------------------------------------------------- */
@@ -1604,11 +1971,260 @@ background-position: 98px;
     opacity: 0;
   }
 }
+/* 480px */
+/* ------------------------------------------------------------------------------------------------ */
+/* 480px */
+@media (max-width: 600px) {
+  /* menu */
+/* menu */
+/* menu */
+/* menu */
+.header__logo{
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-right: 120px;
+  z-index: 12;
+}
+.header_burger {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  right: 0;
+  z-index: 12;
+
+}
+.header_burger.active span{
+  transform: scale(0);
+  }
+.header_burger.active::before{
+transform: rotate(45deg);
+top: 9px;
+}
+.header_burger.active::after{
+  transform: rotate(-45deg);
+  bottom: 9px;
+  }
+.header_nav-list{
+  display: block;
+  position: fixed;
+  padding-top: 100px;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 11;
+}
+.header_nav-list.active{
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.header_nav-item{
+  position: relative;
+  padding-left: 0;
+  padding-top: 30px;
+  font-size: 50px;
+}
+.header_user-nav{
+  display: none;
+}
+/* why_us */
+/* why_us */
+/* why_us */
+/* why_us */
+.WHY_US{
+  margin-left: 15px;
+  max-width:842px;
+
+}
+.text_why_us{
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 19px;
+  padding-top: 25px;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+  text-align: justify;
+  line-height: 1.6;
+}
+.container_why_us{
+  display: block;
+
+}
+.title_why_us{
+  font-size: 60px;
+}
+.img_why_us{
+  display: none;
+}
+.container_why_us{
+  background-image: url("../img/Vector_ba.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.rectangle{
+  display: none;
+}
+.information{
+  display: block;
+
+}
+  .flex{
+display: block;
+  }
+.title2{
+  font-size: 60px;
+display: block;
+text-align: center;
+padding-left: 0;
+position: relative;
+top: 0;
+}
+.text2{
+display: block;
+margin-top: 68px;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 474px;
+}
+.btn-box_information{
+
+}
+.quotes_t{
+  display: none;
+}
+.quotes_b{
+  display: none;
+}
+}
 
 /* 480px */
 /* ------------------------------------------------------------------------------------------------ */
 /* 480px */
 @media (max-width: 480px) {
+  /* menu */
+/* menu */
+/* menu */
+/* menu */
+.header__logo{
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-right: 120px;
+  z-index: 12;
+}
+.header_burger {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  right: 0;
+  z-index: 12;
+
+}
+.header_burger.active span{
+  transform: scale(0);
+  }
+.header_burger.active::before{
+transform: rotate(45deg);
+top: 9px;
+}
+.header_burger.active::after{
+  transform: rotate(-45deg);
+  bottom: 9px;
+  }
+.header_nav-list{
+  display: block;
+  position: fixed;
+  padding-top: 100px;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 11;
+}
+.header_nav-list.active{
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.header_nav-item{
+  position: relative;
+  padding-left: 0;
+  padding-top: 30px;
+  font-size: 50px;
+}
+.header_user-nav{
+  display: none;
+}
+/* why_us */
+/* why_us */
+/* why_us */
+/* why_us */
+.WHY_US{
+  margin-left: 15px;
+  max-width:842px;
+
+}
+.text_why_us{
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 19px;
+  padding-top: 25px;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+  text-align: justify;
+  line-height: 1.6;
+}
+.container_why_us{
+  display: block;
+
+}
+.title_why_us{
+  font-size: 60px;
+}
+.img_why_us{
+  display: none;
+}
+.container_why_us{
+  background-image: url("../img/Vector_ba.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.rectangle{
+  display: none;
+}
+.information{
+  display: block;
+
+}
+  .flex{
+display: block;
+  }
+.title2{
+  font-size: 60px;
+display: block;
+text-align: center;
+padding-left: 0;
+position: relative;
+top: 0;
+}
+.text2{
+display: block;
+margin-top: 68px;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 474px;
+}
+.btn-box_information{
+
+}
+.quotes_t{
+  display: none;
+}
+.quotes_b{
+  display: none;
+}
 
   /* Workshops */
   /* --------------------------------------------------------------------------------------------- */
@@ -1732,6 +2348,129 @@ background-position: 98px;
 
 /* 320px */
 @media (max-width:320px) {
+/* menu */
+/* menu */
+/* menu */
+/* menu */
+.header__logo{
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-right: 120px;
+  z-index: 12;
+}
+.header_burger {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  right: 0;
+  z-index: 12;
+
+}
+.header_burger.active span{
+  transform: scale(0);
+  }
+.header_burger.active::before{
+transform: rotate(45deg);
+top: 9px;
+}
+.header_burger.active::after{
+  transform: rotate(-45deg);
+  bottom: 9px;
+  }
+.header_nav-list{
+  display: block;
+  position: fixed;
+  padding-top: 100px;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 11;
+}
+.header_nav-list.active{
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+.header_nav-item{
+  position: relative;
+  padding-left: 0;
+  padding-top: 30px;
+  font-size: 50px;
+}
+.header_user-nav{
+  display: none;
+}
+/* why_us */
+/* why_us */
+/* why_us */
+/* why_us */
+.WHY_US{
+  margin-left: 15px;
+  max-width:842px;
+
+}
+.text_why_us{
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 19px;
+  padding-top: 25px;
+  word-wrap: break-word;
+  margin-bottom: 25px;
+  text-align: justify;
+  line-height: 1.6;
+}
+.container_why_us{
+  display: block;
+
+}
+.title_why_us{
+  font-size: 60px;
+}
+.img_why_us{
+  display: none;
+}
+.container_why_us{
+  background-image: url("../img/Vector_ba.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.rectangle{
+  display: none;
+}
+.information{
+  display: block;
+
+}
+  .flex{
+display: block;
+  }
+.title2{
+  font-size: 60px;
+display: block;
+text-align: center;
+padding-left: 0;
+position: relative;
+top: 0;
+}
+.text2{
+display: block;
+margin-top: 68px;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 474px;
+}
+.btn-box_information{
+
+}
+.quotes_t{
+  display: none;
+}
+.quotes_b{
+  display: none;
+}
+  
   .traning__plans-title {
     font-size: 60px;
   }
