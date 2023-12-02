@@ -40,5 +40,9 @@ $(document).ready(function() {
     $('.header_burger').click(function() {
     $('.header_burger,.header_nav-list').toggleClass('active');;
   });
-
 });
+$('ul li a').click(function() {
+  if ( $('.header_nav-list').hasClass('active')) {
+   $('.header_nav-list').removeClass('active');
+  }
+})

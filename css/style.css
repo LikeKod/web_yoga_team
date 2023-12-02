@@ -1400,8 +1400,8 @@ background-position: 98px;
   .header_nav-item{
     position: relative;
     padding-left: 172px;
-    padding-top: 30px;
-    font-size: 50px;
+    padding-top: 10px;
+    font-size: 30px;
   }
   .header_user-nav{
     display: none;
@@ -1411,7 +1411,7 @@ background-position: 98px;
   /* why_us */
   /* why_us */
   .WHY_US{
-    margin-left: 15px;
+    margin-left: 0;
     max-width:842px;
 
   }
@@ -1644,8 +1644,8 @@ background-position: 98px;
     .header_nav-item{
       position: relative;
       padding-left: 172px;
-      padding-top: 30px;
-      font-size: 50px;
+      padding-top: 10px;
+      font-size: 30px;
     }
     .header_user-nav{
       display: none;
@@ -1655,7 +1655,7 @@ background-position: 98px;
     /* why_us */
     /* why_us */
     .WHY_US{
-      margin-left: 15px;
+      margin-left: 0;
       max-width:842px;
   
     }
@@ -1769,8 +1769,8 @@ top: 9px;
 .header_nav-item{
   position: relative;
   padding-left: 172px;
-  padding-top: 30px;
-  font-size: 50px;
+  padding-top: 10px;
+  font-size: 30px;
 }
 .header_user-nav{
   display: none;
@@ -1780,7 +1780,7 @@ top: 9px;
 /* why_us */
 /* why_us */
 .WHY_US{
-  margin-left: 15px;
+  margin-left: 0;
   max-width:842px;
 
 }
@@ -1971,9 +1971,9 @@ margin-right: 0;
     opacity: 0;
   }
 }
-/* 480px */
+/* 600px */
 /* ------------------------------------------------------------------------------------------------ */
-/* 480px */
+/* 600px */
 @media (max-width: 600px) {
   /* menu */
 /* menu */
@@ -2023,8 +2023,8 @@ top: 9px;
 .header_nav-item{
   position: relative;
   padding-left: 0;
-  padding-top: 30px;
-  font-size: 50px;
+  padding-top: 10px;
+  font-size: 30px;
 }
 .header_user-nav{
   display: none;
@@ -2034,7 +2034,7 @@ top: 9px;
 /* why_us */
 /* why_us */
 .WHY_US{
-  margin-left: 15px;
+  margin-left: 0;
   max-width:842px;
 
 }
@@ -2151,8 +2151,8 @@ top: 9px;
 .header_nav-item{
   position: relative;
   padding-left: 0;
-  padding-top: 30px;
-  font-size: 50px;
+  padding-top: 10px;
+  font-size: 30px;
 }
 .header_user-nav{
   display: none;
@@ -2162,7 +2162,7 @@ top: 9px;
 /* why_us */
 /* why_us */
 .WHY_US{
-  margin-left: 15px;
+  margin-left: 0;
   max-width:842px;
 
 }
@@ -2396,8 +2396,8 @@ top: 9px;
 .header_nav-item{
   position: relative;
   padding-left: 0;
-  padding-top: 30px;
-  font-size: 50px;
+  padding-top: 10px;
+  font-size: 30px;
 }
 .header_user-nav{
   display: none;
@@ -2407,7 +2407,7 @@ top: 9px;
 /* why_us */
 /* why_us */
 .WHY_US{
-  margin-left: 15px;
+  margin-left: 0;
   max-width:842px;
 
 }
