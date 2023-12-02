@@ -2066,8 +2066,44 @@ top: 9px;
   background-position: right;
   background-repeat: no-repeat;
 }
-.rectangle{
-  display: none;
+.rectangle {
+  width: 402.34px;
+  height: 438.34000000000003px;
+  padding-top: 101px;
+  background: #48b84a00;
+  border-radius: 21px;
+}
+
+.square {
+  width: 283px;
+  height: 436.79999999999995px;
+  padding-top: 145px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  background-image: url(../img/behrouz-sasani-lARsk3UchkQ-unsplash\ 1.png);
+  background-size: 247px;
+  background-repeat: no-repeat;
+  background-position: center 21.22px;
+  position: relative;
+  top: -77.76999999999998px;
+  right: 31.829999999999984px;
+}
+.description1 {
+  font-family: Ramabhadra;
+  color: #48B84A;
+  font-size: 30px;
+  word-wrap: break-word;
+  padding-top: 143px;
+  padding-left: 32px;
+  padding-right: -190px;
+}
+.description2 {
+  font-family: Ramabhadra;
+  color: #080C14;
+  font-size: 20px;
+  word-wrap: break-word;
+  padding-top: 8px;
+  padding-left: 36px;
 }
 .information{
   display: block;
@@ -2194,8 +2230,44 @@ top: 9px;
   background-position: right;
   background-repeat: no-repeat;
 }
-.rectangle{
-  display: none;
+.rectangle {
+  width: 402.34px;
+  height: 438.34000000000003px;
+  padding-top: 101px;
+  background: #48b84a00;
+  border-radius: 21px;
+}
+
+.square {
+  width: 283px;
+  height: 436.79999999999995px;
+  padding-top: 145px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  background-image: url(../img/behrouz-sasani-lARsk3UchkQ-unsplash\ 1.png);
+  background-size: 247px;
+  background-repeat: no-repeat;
+  background-position: center 21.22px;
+  position: relative;
+  top: -77.76999999999998px;
+  right: 31.829999999999984px;
+}
+.description1 {
+  font-family: Ramabhadra;
+  color: #48B84A;
+  font-size: 30px;
+  word-wrap: break-word;
+  padding-top: 143px;
+  padding-left: 32px;
+  padding-right: -190px;
+}
+.description2 {
+  font-family: Ramabhadra;
+  color: #080C14;
+  font-size: 20px;
+  word-wrap: break-word;
+  padding-top: 8px;
+  padding-left: 36px;
 }
 .information{
   display: block;
@@ -2439,8 +2511,44 @@ top: 9px;
   background-position: right;
   background-repeat: no-repeat;
 }
-.rectangle{
-  display: none;
+.rectangle {
+  width: 402.34px;
+  height: 438.34000000000003px;
+  padding-top: 101px;
+  background: #48b84a00;
+  border-radius: 21px;
+}
+
+.square {
+  width: 283px;
+  height: 436.79999999999995px;
+  padding-top: 145px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  background-image: url(../img/behrouz-sasani-lARsk3UchkQ-unsplash\ 1.png);
+  background-size: 247px;
+  background-repeat: no-repeat;
+  background-position: center 21.22px;
+  position: relative;
+  top: -77.76999999999998px;
+  right: 31.829999999999984px;
+}
+.description1 {
+  font-family: Ramabhadra;
+  color: #48B84A;
+  font-size: 30px;
+  word-wrap: break-word;
+  padding-top: 143px;
+  padding-left: 32px;
+  padding-right: -190px;
+}
+.description2 {
+  font-family: Ramabhadra;
+  color: #080C14;
+  font-size: 20px;
+  word-wrap: break-word;
+  padding-top: 8px;
+  padding-left: 36px;
 }
 .information{
   display: block;
